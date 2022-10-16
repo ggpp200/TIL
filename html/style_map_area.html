@@ -16,6 +16,25 @@
   .color-black {
     background-color: black;
   }
+  #pentagon {
+      position: relative;
+      width: 54px;
+      box-sizing: content-box;
+      border-width: 50px 18px 0;
+      border-style: solid;
+      border-color: pink transparent;
+    }
+    #pentagon:before {
+      content: "";
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -85px;
+      left: -18px;
+      border-width: 0 45px 35px;
+      border-style: solid;
+      border-color: transparent transparent pink;
+    }
 </style>
 </head>
 <body>
@@ -31,7 +50,7 @@
           target="_blank" alt="JavaScript">
 </map>
 <!-- <img usemap="#infographic" src="./mdn-info2.png" alt="MDN infographic"> -->
-<map name="infographic">
+<map name="infographc">
   <area shape="rect" coords="184,6,253,27" "
         href="https://mozilla.org"
         target="_blank" alt="Mozilla">
@@ -53,7 +72,9 @@
   <area shape="poly" coords="6,97,130,6,130,39,36,107"
         href="https://developer.mozilla.org/docs/Web/CSS"
         target="_blank" alt="CSS">
+        
 </map>
-<img usemap="#infographic" style="width:800px" src="https://interactive-examples.mdn.mozilla.net/media/examples/mdn-info.png" alt="MDN infographic">
+<img usemap="#infographc" style="width: 260px; height: 248px;" src="https://interactive-examples.mdn.mozilla.net/media/examples/mdn-info.png" alt="MDN infographic">
+
 </body>
 </html>
